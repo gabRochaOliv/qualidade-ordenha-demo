@@ -7,4 +7,5 @@ def calcular_total_diario(ordenhas, propriedade_id):
         ordenha["litros"]
         for ordenha in ordenhas
         if ordenha["propriedade_id"] == propriedade_id
+        and ordenha["status"] == "confirmada"
     )
